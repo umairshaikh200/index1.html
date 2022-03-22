@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width = device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/34eda91d61.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="shortcut icon" href="asc.jpg" type="image/x-icon">
+    <title>My Resume</title>
+    <style>
+        #brand {
+            font-size: large;
+            font-weight: 700;
+            font-family: "Audiowide";
+            color: black;
+            text-shadow: 1px 1px 1px cyan;
+        }
+
+        #brand:hover {
+            transform: scale(1.08);
+            transition: ease-in-out 0.5;
+        }
+
+        div #hovereffect li,#contact {
+            font-weight: 600;
+            font-size: medium;
+            font-family: "Audiowide";
+            color: black;
+            text-shadow: 1px 1px 1px cyan;
+            letter-spacing: 2px;
+            margin-left: 30px;
+        }
+
+        div #hovereffect li:hover {
+            transform: scale(1.04);
+            transition: ease-in-out 0.5s;
+            background-color: white;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+     
+
+        #nav-background {
+            background-image: linear-gradient(91.33deg, rgb(74, 87, 87) 9.21%, rgb(85, 77, 92) 51.23%, rgb(116, 91, 87) 78.31%);
+        }
+
+        /* .random-bg:before {
+            content: '';
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.6;
+
+        } */
+        #coming-soon {
+            font-size: large;
+            font-family: "Audiowide";
+
+        }
+
+        #welcome-msg {
+            font-size: 45px;
+            font-weight: 500;
+            font-family: "Audiowide";
+            background-color: aliceblue;
+        }
+
+        #welcome-msg:hover {
+            color: white;
+            background-color: black;
+        }
+
+        #image-caption {
+            font-size: large;
+            /* font-weight: 700; */
+            font-family: "Audiowide";
+            word-spacing: 2px;
+            letter-spacing: 2px;
+        }
+
+        body {
+            background-image: linear-gradient(91.34deg, cyan 9.23%, wheat 45.23%, rgb(91, 150, 202) 78.54%);
+        }
+
+        #aboutw {
+            font-size: large;
+            font-family: "Audiowide";
+            letter-spacing: 2px;
+            word-spacing: 2px;
+        }
+
+        #signature {
+            font-family: 'Inspiration', cursive;
+            font-size: 45px;
+        }
+
+        .logo {
+            animation-iteration-count: infinite;
+        }
+        #contact:hover{
+            border-radius: 30px;
+            background-color: white;
+            transition: ease-in-out 0.5s;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#about").click(function () {
+                $("#home1").hide(2000);
+                $("#bg3").hide(2000);
+                $("#bg2").show(2000);
+                $("#bg4").hide(2000);
+            });
+            $("#home").click(function () {
+                $("#bg2").hide(2000);
+                $("#bg3").hide(2000)
+                $("#home1").show(2000);
+                $("#bg4").hide(2000);
+
+            });
+            $("#skills").click(function () {
+                $("#home1").hide(2000);
+                $("#bg2").hide(2000);
+                $("#bg4").hide(2000);
+                $("#bg3").show(2000);
+
+            });
+            $("#experience").click(function () {
+                $("#home1").hide(2000);
+                $("#bg2").hide(2000);
+                $("#bg3").hide(2000);
+                $("#bg4").show(2000);
+                $("#coming-soon").animate({ "font-size": "50px" }, 2000);
+            });
+
+        });
+
+
+        // yaha tak
+    </script>
+</head>
+
+<body>
+    <div class="random-bg">
+        <div class="container-fluid">
+            <div class="navbar  navbar-default" id="nav-background">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand animate__animated animate__heartBeat logo" id="brand">My Resume</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar123">
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse" id="navbar123">
+                    <ul class="nav navbar-nav" id="hovereffect">
+                        <li id="home"><a href="#home1" id="home">Home</a></li>
+                        <li id="about"><a href="#about1">About</a></li>
+                        <li id="skills"><a href="#skills1">Skills</a></li>
+                        <li id="experience"><a href="#experience1">Experience</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="contact" class="dropdown"><a href="#contact-me" data-toggle="dropdown">Contact Me
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" id="others">
+                            <li><a href="#wtsp">Whatsapp</a></li>
+                            <li><a href="https://www.instagram.com/umairshaikh_1898">Instagram</a></li>
+                            <li><a href="#Facebook">Facebook</a></li>
+                            <li><a href="https://www.linkedin.com/in/umair-shaikh-5352b3230">LinkedIn</a></li>
+                            <li><a href="https://t.me/Umair1231">Telegram</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#others">Others</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="home" id="home1">
+                    <h1 id="welcome-msg">
+                        <center>Welcome to my page!</center>
+                    </h1>
+                    <hr>
+
+                    <center><img src="asc.jpg" alt="mypic" class="img-thumbnail img-circle" height="50px" width="200px"
+                            onload="pic()" id="mypic"></center>
+                    <hr><br>
+                    <h3 id="image-caption">
+                        <center><b>Hello Everyone! </b>My name is <b>Umair Ahmad.</b> My father's name is <b>Mr.
+                                Shafique Ahmad.</b><br><br>
+                            I belongs to <b>Azamgarh.</b>Currently I am a student of<b> B.Tech 3<sup>rd</sup></b> year
+                            from <b>Kamla Nehru<br>
+                                Institute of Physical and Social Sciences, Faridipur-Sultanpur.
+                            </b></center>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br>
+    <div class="container" id="bg2" hidden>
+        <div class="row">
+            <div class="bg-2-1" id="about1">
+                <h1 id="welcome-msg">
+                    <center>About</center>
+                </h1>
+                <hr>
+                <h3 id='aboutw'>
+                    <center><b>Hello Everyone! </b>My name is <b>Umair Ahmad.</b> My father's name is <b>Mr.
+                            Shafique Ahmad.</b><br><br>
+                        I belongs to <b>Azamgarh.</b>Currently I am a student of<b> B.Tech 3<sup>rd</sup></b> year
+                        from <b>Kamla Nehru<br>
+                            Institute of Physical & Social Sciences, Faridipur-Sultanpur.
+                        </b>
+                        <br><br>I have passed my 10<sup>th</sup> and 12<sup>12</sup> from <b>St. Thomas Inter College,
+                            Shahganj-Jaunpur.
+                        </b>
+                        <br>
+                        I am a fast learner and good listener. I am very interested in learning new technologies <br>
+                        like AI, Machine-Learning etc.
+                    </center>
+                </h3>
+            </div>
+        </div>
+        <hr>
+        <br><br><br><br><br><br>
+        <div class="row">
+            <div class="col-md-9"></div>
+            <div class="col-md-3">
+                <h1 id="signature">Umair Shaikh</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="bg3" hidden>
+        <div class="row">
+            <div id="skills1">
+                <h1 id="welcome-msg">
+                    <center>Skills</center>
+                </h1>
+                <br>
+                <hr><br><br>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 col-xs-12">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-primary" aria-valuenow="80" aria-valuemax="100"
+                        aria-valuemin="0" style="width: 80%;">80%</div>
+                </div>
+                <center>
+                    <h1>HTML</h1>
+                </center>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5 col-xs-12">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info" aria-valuenow="80" aria-valuemax="100" aria-valuemin="0"
+                        style="width: 70%;">70%</div>
+                </div>
+                <center>
+                    <h1>CSS</h1>
+                </center>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-md-5 col-xs-12">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-warning" aria-valuenow="80" aria-valuemax="100"
+                        aria-valuemin="0" style="width: 60%;">60%</div>
+                </div>
+                <center>
+                    <h1>Java Script</h1>
+                </center>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5 col-xs-12">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger" aria-valuenow="80" aria-valuemax="100"
+                        aria-valuemin="0" style="width: 50%;">50%</div>
+                </div>
+                <center>
+                    <h1>Python Programming</h1>
+                </center>
+            </div>
+
+        </div>
+    </div>
+    <div class="container" id="bg4" hidden>
+        <div class="row">
+            <div id="experience1">
+                <h1 id="welcome-msg">
+                    <center>Experience</center>
+                </h1>
+                <br>
+                <hr><br><br>
+
+            </div>
+        </div>
+
+        <h1 id="coming-soon">
+            <center>Coming Soon</center>
+        </h1><br><br><br><br><br>
+    </div>
+</body>
+
+</html>
